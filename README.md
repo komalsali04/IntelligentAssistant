@@ -1,6 +1,6 @@
-# JioPay Customer Service Chatbot 
+f# JeeyoPay Customer Service Chatbot 
 
-An intelligent RAG (Retrieval-Augmented Generation) chatbot that provides instant, accurate answers about JioPay services. This project involves complete web scraping of the JioPay website, data processing, and building a production-ready conversational AI assistant.
+An intelligent RAG (Retrieval-Augmented Generation) chatbot that provides instant, accurate answers about JeeyoPay services. This project involves complete web scraping of the JeeyoPay website, data processing, and building a production-ready conversational AI assistant.
 
 ##  Live Demo
 
@@ -8,7 +8,7 @@ The app is deployed on Hugging Face Space.
 **Try it here:** [https://huggingface.co/spaces/komalLM/JioPay-Chatbot]
 
 ##  Project Overview
-This is an end-to-end AI chatbot project that demonstrates the complete pipeline from data collection to deployment. The chatbot acts as a virtual customer service representative for JioPay, capable of answering questions about payments, wallet features, UPI transactions, recharges, bill payments, and more.
+This is an end-to-end AI chatbot project that demonstrates the complete pipeline from data collection to deployment. The chatbot acts as a virtual customer service representative for JeeyoPay, capable of answering questions about payments, wallet features, UPI transactions, recharges, bill payments, and more.
 Why This Matters
 Traditional customer support relies on human agents or rigid rule-based systems. This RAG-based chatbot:
 
@@ -20,7 +20,7 @@ Traditional customer support relies on human agents or rigid rule-based systems.
 
 ## Project Workflow
 ### Phase 1: Web Scraping with Selenium
-Automated the entire JioPay website scraping process using Selenium WebDriver to collect comprehensive documentation.
+Automated the entire JeeyoPay website scraping process using Selenium WebDriver to collect comprehensive documentation.
 
 * Set up automated browser navigation for JioPay's official website
 * Handled dynamic JavaScript-rendered content with proper wait conditions
@@ -36,10 +36,10 @@ Automated the entire JioPay website scraping process using Selenium WebDriver to
 * Generated 4 structured files:
 
 The csv and json files were generated after scraping the website
-- jiopay_links_content.csv - Website page content
-- jiopay_faqs.csv - Question-answer pairs
-- jiopay_help_center_faqs.json - Hierarchical help articles
-- jiopay_links_content.json - Structured website data
+- links_content2.csv - Website page content
+- questions.csv - Question-answer pairs
+- help_center_faqs.json - Hierarchical help articles
+- links_content.json - Structured website data
 
 
 * Output: Clean, queryable datasets with 500+ documents
@@ -68,7 +68,7 @@ Key Components:
 ##  Features
 
 - **Semantic Search**: Uses FAISS vector database for fast and accurate information retrieval
-- **Source Citations**: Shows exact source snippets from official JioPay documentation
+- **Source Citations**: Shows exact source snippets from official JeeyoPay documentation
 - **Real-time Responses**: Powered by Groq's LLaMA 3.1 model for quick answers
 - **User-Friendly Interface**: Clean Gradio web interface
 - **Multi-format Support**: Processes both CSV and JSON data files
@@ -93,10 +93,10 @@ jiopay-chatbot/
 ├── .gitignore                      # Git ignore rules
 ├── README.md                       # Project documentation
 │
-├── jiopay_links_content.csv        # JioPay website content
-├── jiopay_faqs.csv                 # Frequently asked questions
-├── jiopay_help_center_faqs.json    # Help center data
-└── jiopay_links_content.json       # Additional content data
+├── links_content2.csv        # JeeyoPay website content
+├── questions.csv                 # Frequently asked questions
+├── help_center_faqs.json    # Help center data
+└── links_content.json       # Additional content data
 ```
 
 ##  Local Setup
@@ -156,8 +156,8 @@ jiopay-chatbot/
 ##  Data Sources
 
 The chatbot uses the following data sources:
-- JioPay official website content
-- JioPay FAQs and help center articles
+- JeeyoPay official website content
+- JeeyoPay FAQs and help center articles
 - Customer support documentation
 
 All data is preprocessed and indexed for efficient retrieval.
@@ -170,7 +170,7 @@ All data is preprocessed and indexed for efficient retrieval.
 
 ##  Acknowledgments
 
-- JioPay for the documentation data
+- JeeyoPay for the documentation data
 - Groq for providing fast LLM inference
 - HuggingFace for embeddings and hosting
 - LlamaIndex and LangChain communities
