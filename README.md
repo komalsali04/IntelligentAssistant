@@ -2,11 +2,6 @@ f# JeeyoPay Customer Service Chatbot
 
 An intelligent RAG (Retrieval-Augmented Generation) chatbot that provides instant, accurate answers about JeeyoPay services. This project involves complete web scraping of the JeeyoPay website, data processing, and building a production-ready conversational AI assistant.
 
-##  Live Demo
-
-The app is deployed on Hugging Face Space.
-**Try it here:** [https://huggingface.co/spaces/komalLM/JioPay-Chatbot]
-
 ##  Project Overview
 This is an end-to-end AI chatbot project that demonstrates the complete pipeline from data collection to deployment. The chatbot acts as a virtual customer service representative for JeeyoPay, capable of answering questions about payments, wallet features, UPI transactions, recharges, bill payments, and more.
 Why This Matters
